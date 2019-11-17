@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./emoji/lib/css/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="./emoji/dist/css/jquery.emoji.css" />
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>聊天室</title>
+</head>
+
+<body>
+    <!-- 登录框 -->
+    <div class="login" style="display: block;">
+        <div class="login_in">
+            <h2 class="title">用户登录</h2>
+            <div class="top">
+                <label for="username">用户名</label>
+                <input type="text" name="username" id="username" placeholder="请输入用户名...">
+            </div>
+            <div class="photos">
+                <p>选择头像</p>
+                <ul class="photos-img">
+                    <li class="active"><img src="./image/0.png" alt=""></li>
+                    <li><img src="./image/1.png" alt=""></li>
+                    <li><img src="./image/2.png" alt=""></li>
+                    <li><img src="./image/3.png" alt=""></li>
+                    <li><img src="./image/4.png" alt=""></li>
+                    <li><img src="./image/5.png" alt=""></li>
+                    <li><img src="./image/6.png" alt=""></li>
+                    <li><img src="./image/7.png" alt=""></li>
+                    <li><img src="./image/8.png" alt=""></li>
+                    <li><img src="./image/9.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button id='loginBtn'>登 录</button>
+            </div>
+        </div>
+    </div>
+    <!-- 聊天消息框 -->
+    <div class="msg" style="display: none;">
+        <div class="msg-in">
+            <!-- 左侧 -->
+            <div class="msg-in-l">
+                <!-- 用户自己 -->
+                <div class="usrname">
+                    <img class="avatr" src="./image/0.png" alt="">
+                    <span class="usrname-text">xxxx</span>
+                </div>
+                <!-- 其他用户 -->
+                <div class="list">
+                    <p>用户列表</p>
+                    <ul class="firend">
+                        <!-- <li>
+                            <img src="./image/0.png" alt="">
+                            <span>xxx</span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 右侧 -->
+            <div class="msg-in-r">
+                <div class="tit">
+                    <h3>聊天室(<span id="userCount">99</span>)</h3>
+                </div>
+                <div class="message">
+                    <!-- 聊天室的消息 -->
+                    <div class="aletr">
+                        <!-- <div class="div-message-system message-top">
+                            <span class="message-system">xxsasaxxxx</span>
+                        </div> -->
+                        <!-- 别人的消息 
+                        <div class="message-top">
+                            <div class="message-top-l">
+                                <img src="./image/0.png" alt="">
+                                <span class="flex-box">
+                                      <span>xxxx</span>
+                                <span class="box-msg">xxx</span>
+                                </span>
+                            </div>
+                        </div>-->
+
+                        <!-- 自己的消息 
+                        <div class="message-top">
+                            <div class="message-top-r">
+
+                                <span class="box-msg2">xxxx</span>
+                                <img src="./image/0.png" alt="">
+                            </div>
+                        </div>-->
+
+                    </div>
+                    <!-- 编辑框 -->
+                    <div class="send">
+                        <!-- 功能区 -->
+                        <div class="toolbar">
+                            <a href="javascript:;" title="表情" class="major"></a>
+                            <a href="javascript:;" title="截图" class="cut"></a>
+                            <a href="javascript:;" title="图片" class="file">
+                                <label for="file"></label>
+                                <input type="file" id="file" style="display: none;">
+                            </a>
+                        </div>
+                        <!-- 编辑框消息 -->
+                        <div class="send-msg">
+                            <div id="send-msg-content" class="send-msg-text" contenteditable></div>
+                        </div>
+                        <!-- 发送按钮 -->
+                        <div class="send-btn">
+                            <span>按下Ctrl+Enter发送</span>
+                            <button class="send-btn-send">发  送</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./emoji/lib/script/jquery.mCustomScrollbar.min.js"></script>
+<!--the js for this plugin-->
+<script src="./emoji/dist/js/jquery.emoji.min.js"></script>
+<script src="./js/index.js"></script>
+
+
+
+</html>

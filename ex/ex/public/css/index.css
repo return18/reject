@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    /* background-color: #323232; */
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* 登录框样式 */
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login_in {
+    /* height: 100px; */
+    padding: 50px;
+    background: white;
+    border-radius: 10px;
+}
+
+.login_in .title {
+    color: #403d36;
+    text-align: center;
+    height: 60px;
+    font-size: 26px;
+}
+
+.top label {
+    display: block;
+}
+
+.top input {
+    width: 425px;
+    height: 45px;
+    list-style: none;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.photos {}
+
+.photos p {
+    margin: 15px 0;
+}
+
+.photos-img {
+    height: 155px;
+    width: 425px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.photos-img li {
+    width: 55px;
+    height: 58px;
+    cursor: pointer;
+    float: left;
+    margin: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.photos img {
+    width: 55px;
+    height: 58px;
+}
+
+.active {
+    outline: 2px solid green;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.btn button {
+    width: 425px;
+    height: 45px;
+    background-color: #18ab19;
+    list-style: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: green;
+}
+
+
+/* 消息框样式 */
+
+body,
+html {
+    height: 100%;
+}
+
+.msg {
+    width: 70%;
+    max-width: 1400px;
+    background-color: hotpink;
+    height: 100%;
+    /* width: 200px; */
+    min-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.msg-in {
+    display: flex;
+    height: 100%;
+}
+
+.msg-in .msg-in-l {
+    flex: 1;
+    background-color: #2c3237;
+    height: 100%;
+}
+
+.usrname {
+    height: 14%;
+    border-bottom: 1px solid #242a2f;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.usrname img,
+.firend li img {
+    width: 55px;
+    height: 58px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.list {
+    height: 86%;
+    overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.usrname span,
+.list p,
+.firend li span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.list p {
+    height: 66px;
+    border-bottom: 1px solid #242a2f;
+    box-sizing: border-box;
+    line-height: 66px;
+    margin-left: 20px;
+}
+
+.firend li {
+    height: 92px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #242a2f;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.msg-in .msg-in-r {
+    flex: 2;
+    background-color: #ebebeb;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.aletr::-webkit-scrollbar {
+    width: 2px;
+}
+
+.tit {
+    border-bottom: 1px solid #d3d3d3;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0;
+}
+
+.tit h3 {
+    font-weight: normal;
+    user-select: none;
+    font-size: 1.2em;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    height: 93%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.aletr {
+    flex: 2;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.send {
+    flex: 1;
+    border-top: 1px solid #d3d3d3;
+    position: relative;
+    overflow: hidden;
+}
+
+.send .send-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+.send button {
+    list-style: none;
+    outline: 1px solid #d3d3d3;
+    border: none;
+    width: 123px;
+    height: 37px;
+    display: inline-block;
+    color: #444348;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.send span {
+    color: #adaba6;
+    font-size: 12px;
+    user-select: none;
+}
+
+
+/* 聊天消息样式 */
+
+.div-message-system {
+    text-align: center;
+}
+
+.message-system {
+    font-size: 12px;
+    color: #b7b7b7;
+    user-select: none;
+}
+
+.message-top {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.message-top .img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.message-top .box-msg {
+    padding: 8px 16px 15px;
+    background-color: #fdfdfd;
+    display: inline-table;
+    border-radius: 3px;
+    color: #14131a;
+    top: -7px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #d3d3d3;
+}
+
+.message-top .box-msg:before {
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: absolute;
+    border-top: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    top: 50%;
+    left: -4px;
+    transform: rotate(-130deg);
+}
+
+.message-top-r {
+    display: flex;
+    float: right;
+}
+
+.message-top-r span,
+.message-top-r img:nth-of-type(1) {
+    margin-right: 8px;
+    position: relative;
+}
+
+.message-top-r span::after {
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: absolute;
+    border-top: 1px solid #b3b3b3;
+    border-right: 1px solid #b3b3b3;
+    top: 50%;
+    right: -4px;
+    transform: rotate(40deg);
+}
+
+.message-top::before,
+.message-top::after {
+    display: table;
+    content: "";
+}
+
+.message-top::after {
+    clear: both;
+}
+
+.message-top-l {
+    float: left;
+    display: flex;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.flex-box span {
+    margin-bottom: 10px;
+}
+
+.box-msg2 {
+    padding: 8px 16px 15px;
+    background-color: #b0e07f;
+    display: inline-table;
+    border-radius: 3px;
+    color: #14131a;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #d3d3d3;
+}
+
+
+/* 功能区 */
+
+.toolbar,
+.send-msg {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.toolbar a {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url('../image/spirit.jpg') no-repeat left top;
+    background-size: cover;
+}
+
+.toolbar .cut {
+    background-position: center center;
+}
+
+.toolbar .file {
+    background-position: right top;
+    position: relative;
+}
+
+.file label {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #ebebeb;
+    opacity: 0;
+}
+
+.file input {
+    position: absolute;
+}
+
+.send-msg {
+    margin-right: 20px;
+}
+
+.send-msg .send-msg-text {
+    width: 100%;
+    resize: none;
+    overflow-y: auto;
+    height: 80px;
+    border: none;
+    outline: none;
+    background-color: #ebebeb;
+    line-height: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #2c3237;
+}
